@@ -1,0 +1,260 @@
+/*Estilo do corpo e elementos principais */
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando a fonte Montserrat */
+    background-color: #1b63b8; /* Altere conforme desejado */
+    color: white;
+    margin: 1;
+    padding: 0;
+    display: flex; /* Usar flexbox */
+    min-height: 100vh; /* Altura mínima para preencher a tela */
+    flex-direction: column; /* Coluna para empilhar os elementos */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #2c3e50; /* Altere a cor conforme desejado */
+    /*2c3e50 29292c*/
+    /*1b63b8*/
+    padding: 4px;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    
+}
+
+.logo-img {
+    max-width: 150px; /* Limita o tamanho da logo */
+}
+
+p {
+
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    
+    font-weight: bold;
+    color: #ffc800;
+
+}
+
+h2 {
+    
+    font-weight: bold;
+    color: #ffc800;
+
+}
+
+h3 {
+    font-weight: bold;
+    color: #ffc800;
+
+}
+
+
+
+/* Estilo do menu */
+nav .menu {
+    list-style: none;
+    padding: 0;
+}
+
+nav .menu li {
+    display: inline;
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo principal */
+main {
+    text-align: center; /* Centraliza o conteúdo principal */
+    padding: 20px;
+}
+
+/* Estilo das opções */
+.options {
+    display: flex;
+    justify-content: center; /* Centraliza as opções */
+    gap: 20px; /* Espaçamento entre as opções */
+}
+
+.option {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e o texto em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estilo das imagens das opções */
+.option-img {
+    width: 100px; /* Tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #2c3e50; /* Altere a cor conforme desejado */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative; /* Para controlar a posição se necessário */
+    bottom: 0; /* Mantém o rodapé na parte inferior */
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: 1px; /* Espaçamento acima do rodapé */
+    margin-bottom: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.hero-img {
+    max-width: 300px; /* Ajuste conforme necessário */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Reduzir a margem inferior para aproximar do GIF */
+}
+
+.centralizado {
+    
+    display: block; /* Faz o elemento ser exibido como um bloco */
+    margin: 1px auto; /* Margem superior e inferior de 10px, centralizado horizontalmente */
+    max-width: 250px; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 90px;
+    
+}
+
+.btn-ver-mais {
+    background-color: rgba(255, 174, 0, 0.918); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredondar os cantos */
+    padding: 5px 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Efeito de transição */
+    
+}
+
+.btn-voltar {
+    background-color: white(255, 174, 0, 0.918); /* Cor de fundo */
+    color: #1b63b8; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredondar os cantos */
+    padding: 5px 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Efeito de transição */
+    margin-top: 15px;
+    
+}
+
+
+.btn-ver-mais:hover {
+    background-color: green; /* Cor de fundo ao passar o mouse */
+}
+#texto-instrucao {
+    font-weight: normal; /* Remove o negrito */
+    color: white; /* Defina uma cor agradável para o texto */
+    line-height: 1.5; /* Melhora a legibilidade */
+}
+
+#porte {
+    font-weight: bolder;
+    width: 100%;
+    padding: 11px;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+#porte:focus {
+    border-color: #007bff; /* Cor ao focar */
+}
+
+#porte option {
+    color: #333;
+    background-color: #fff;
+}
+
+/* Adiciona uma seta de dropdown personalizada */
+.select-container {
+    position: relative;
+    width: 100%;
+}
+
+.select-container::after {
+    
+    content: "▼";
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    
+}
+
+.select-container select {
+    font-weight: bolder;
+    width: 100%;
+    padding: 11px;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.input-group {
+    margin-top: 15px;
+}
+
+.input-group input {
+    width: calc(100% - 120px); /* Calcula largura para ajuste com botão */
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+
+.btn-calcular {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgba(255, 174, 0, 0.918); /* Cor de fundo */
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.btn-calcular:hover {
+    background-color: #2c3e50;
+}
