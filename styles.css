@@ -144,10 +144,10 @@ footer {
 }
 
 .btn-voltar {
-    background-color: white(255, 174, 0, 0.918); /* Cor de fundo */
-    color: #1b63b8; /* Cor do texto */
+    background-color: #2c3e50; /* Cor de fundo */
+    color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Arredondar os cantos */
+    border-radius: 10px; /* Arredondar os cantos */
     padding: 5px 10px; /* Espaçamento interno */
     font-size: 14px; /* Tamanho da fonte */
     font-weight: bold;
@@ -258,3 +258,30 @@ footer {
 .btn-calcular:hover {
     background-color: #2c3e50;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF; /* Azul */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cinza claro */
+}
+
+label {
+    font-weight: bold; /* Negrito */
+    color: #ffc800;    /* Cor amarela */
+}
+
