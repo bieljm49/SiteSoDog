@@ -19,7 +19,9 @@
                 <li><a href="#">Sobre</a></li>
                 <li><a href="https://www.instagram.com/dr.brunoferreira.vet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Contato</a></li>
             </ul>
+            <span></span>
         </nav>
+        
     </header>
 
     <main>
@@ -45,12 +47,17 @@
                 <option value="medio">Porte Médio (15 a 25kg)</option>
                 <option value="grande">Porte Grande (acima de 25kg)</option>
             </select>
+            <!-- Campo de entrada de peso para adultos -->
+            <div class="input-group">
+                <label for="peso-adulto">Peso do Cão Adulto (em kg):</label>
+                <h1></h1>
+                <input type="number" id="peso-adulto" placeholder="Insira o Peso do Cão Adulto" min="1" required>
+                <button id="btn-calcular" onclick="calculate()" class="btn-calcular">Calcular</button>
+            </div>
         </div>
 
         <div id="filhote-options" style="display:none;">
             <h2>Escolha a Idade do Filhote</h2>
-            
-            <!-- Estilização do Select com a classe select-container -->
             <div class="select-container">
                 <select id="idade-filhote">
                     <option value="">Selecione</option>
@@ -61,23 +68,32 @@
                     <option value="9-12">9 a 12 meses</option>
                 </select>
             </div>
-        
-            <!-- Campo de entrada de peso para filhotes -->
             <div class="input-group">
                 <label for="peso">Peso do Filhote (em kg):</label>
-                <input type="number" id="peso" placeholder="Insira o peso do filhote" min="1" required>
+                <h1></h1>
+                <input type="number" id="peso" placeholder="Insira o Peso do Filhote" min="1" required>
                 <button id="btn-calcular" onclick="calculate()" class="btn-calcular">Calcular</button>
             </div>
         </div>
         
-       
         <button id="btn-voltar" onclick="voltar()" class="btn-voltar">Voltar</button>
         
-
         <div id="resultado" style="display:none;">
             <h2>Resultado:</h2>
             <p id="faixa-porcao"></p>
             <p id="recomendacoes"></p>
+        
+            <!-- Tabela de recomendações de separação de alimentos -->
+            <table id="tabela-recomendacoes" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Tipo de Alimento</th>
+                        <th>Porcentagem</th>
+                        <th>Quantidade em Gramas</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-recomendacoes"></tbody>
+            </table>
         </div>
 
         <div id="instrucoes" class="instrucoes">
@@ -107,7 +123,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 SoDog. Todos os direitos reservados.</p>
+        <p>&copy; 2024 SoDog. Todos os direitos reservados. versão 04/11/2024 às 18:44</p>
     </footer>
 
     <script src="script.js"></script>
