@@ -40,7 +40,7 @@
 
         <div id="adulto-options" style="display:none;">
             <h2>Escolha o Porte do Cão Adulto</h2>
-            <select id="porte" onchange="calculate()">
+            <select id="porte">
                 <option value="">Selecione</option>
                 <option value="mini">Porte Mini (até 3kg)</option>
                 <option value="pequeno">Porte Pequeno (até 15kg)</option>
@@ -78,10 +78,11 @@
         
         <button id="btn-voltar" onclick="voltar()" class="btn-voltar">Voltar</button>
         
-        <div id="resultado" style="display:none;">
+        <div id="resultado" class="resultado-style" style="display:none;">
             <h2>Resultado:</h2>
-            <p id="faixa-porcao"></p>
-            <p id="recomendacoes"></p>
+            <p   id="faixa-porcao"></p>
+            <p  style="text-align: left;" id="recomendacoes"></p>
+            
         
             <!-- Tabela de recomendações de separação de alimentos -->
             <table id="tabela-recomendacoes" style="display:none;">
@@ -123,7 +124,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 SoDog. Todos os direitos reservados. versão 04/11/2024 às 18:44</p>
+        <p>&copy; 2024 SoDog. Todos os direitos reservados. versão 06/11/2024 às 11:00</p>
     </footer>
 
     <script src="script.js"></script>
