@@ -98,11 +98,15 @@ function calculate() {
         const vegetais = porcaoFilhote * 0.1;
 
         recomendacoes = `Recomendações de separação dos alimentos:
-            - Ossos carnudos: ${ossosCarnudos.toFixed(0)} g
+            __________________________________________
             - Carnes: ${carnes.toFixed(0)} g
+            - Vegetais: ${vegetais.toFixed(0)} g
+            - Ossos carnudos: ${ossosCarnudos.toFixed(0)} g            
             - Víscera muscular: ${viscMuscular.toFixed(0)} g
-            - Víscera secretora: ${viscSecretora.toFixed(0)} g
-            - Vegetais: ${vegetais.toFixed(0)} g`;
+            - Víscera secretora: ${viscSecretora.toFixed(0)} g            
+            __________________________________________`;
+            
+           
     }
 
     // Exibição do resultado
