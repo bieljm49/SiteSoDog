@@ -1,7 +1,7 @@
 /*Estilo do corpo e elementos principais */
 body {
     font-family: 'Montserrat', sans-serif; /* Usando a fonte Montserrat */
-    background-color: #1b63b8; /* Altere conforme desejado */
+    background-color: #FFFFFF; /* Altere conforme desejado */
     color: white;
     margin: 1;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-    background-color: #2c3e50; /* Altere a cor conforme desejado */
+    background-color: #141450; /* Altere a cor conforme desejado */
     /*2c3e50 29292c*/
     /*1b63b8*/
     padding: 4px;
@@ -22,6 +22,23 @@ header {
     
 }
 
+footer {
+    background-color: #141450; /* Altere a cor conforme desejado */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative; /* Para controlar a posição se necessário */
+    bottom: 0; /* Mantém o rodapé na parte inferior */
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: 1px; /* Espaçamento acima do rodapé */
+    margin-bottom: 1px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Eixo X, Eixo Y, Desfoque, Cor */
+}
+
+
 .logo-img {
     max-width: 150px; /* Limita o tamanho da logo */
     
@@ -30,26 +47,27 @@ header {
 p {
 
     font-weight: bold;
-    color: white;
+    color:  rgba(255, 174, 0, 0.918);
+    text-shadow: 0 8px 12px #474a51ad; 
 }
 
 h1 {
     
     font-weight: bold;
-    color: #ffc800;
+    color: #474A51;
 
 }
 
 h2 {
     
     font-weight: bold;
-    color: #ffc800;
+    color: #474A51;
 
 }
 
 h3 {
     font-weight: bold;
-    color: #ffc800;
+    color: #474A51;
 
 }
 
@@ -75,7 +93,10 @@ nav .menu li a {
 /* Estilo principal */
 main {
     text-align: center; /* Centraliza o conteúdo principal */
-    padding: 20px;
+    padding: 50px;
+    background-color: #14145015;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* Eixo X, Eixo Y, Desfoque, Cor */
 }
 
 /* Estilo das opções */
@@ -101,21 +122,6 @@ main {
 }
 
 /* Estilo do rodapé */
-footer {
-    background-color: #2c3e50; /* Altere a cor conforme desejado */
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px; /* Bordas arredondadas */
-    position: relative; /* Para controlar a posição se necessário */
-    bottom: 0; /* Mantém o rodapé na parte inferior */
-    width: 100%; /* Ocupa toda a largura */
-    margin-top: 1px; /* Espaçamento acima do rodapé */
-    margin-bottom: 1px;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Eixo X, Eixo Y, Desfoque, Cor */
-}
 
 
 
@@ -138,7 +144,7 @@ footer {
 }
 
 .btn-ver-mais {
-    background-color: rgba(255, 174, 0, 0.918); /* Cor de fundo */
+    background-color: #1b63b8; /*rgba(255, 174, 0, 0.918);  Cor de fundo */
     color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
     border-radius: 10px; /* Arredondar os cantos */
@@ -172,7 +178,7 @@ footer {
 }
 #texto-instrucao {
     font-weight: normal; /* Remove o negrito */
-    color: white; /* Defina uma cor agradável para o texto */
+    color: #141450; /* Defina uma cor agradável para o texto */
     line-height: 1.5; /* Melhora a legibilidade */
 }
 
@@ -292,7 +298,7 @@ tr:nth-child(even) {
 
 label {
     font-weight: bold; /* Negrito */
-    color: #ffc800;    /* Cor amarela */
+    color: #141450;    /* Cor amarela */
 }
 
 .resultado-style {

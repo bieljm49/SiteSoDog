@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Img/logo/logo.png" type="image/x-icon">
+    <link rel="icon" href="Img/logo/logo redonda.png" type="image/x-icon">
     <title>SoDog | Calculadora</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Img/logo/logo.png" alt="Logo" class="logo-img">
+            <img src="Img/logo/logo redonda.png" alt="Logo" class="logo-img">
         </div>
         <nav>
             <ul class="menu">
@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <h2 style="color: white;">Calculadora de Alimentação Natural para Cães</h2>
+        <h2 style="color: #474A51;">Calculadora de Alimentação Natural para Cães</h2>
         
         <div class="options">
             <div class="option" id="adulto" onclick="selectDogType('adulto')">
@@ -79,9 +79,9 @@
         <button id="btn-voltar" onclick="voltar()" class="btn-voltar">Voltar</button>
         
         <div id="resultado" class="resultado-style" style="display:none;">
-            <h2>Resultado:</h2>
-            <p   id="faixa-porcao"></p>
-            <p  style="text-align: left;" id="recomendacoes"></p>
+            <h2 style="color: rgba(255, 174, 0, 0.918);">Resultado</h2>
+            <p style="color: white;"   id="faixa-porcao"></p>
+            <p  style="text-align: left; color: white;  " id="recomendacoes"></p>
             
         
             <!-- Tabela de recomendações de separação de alimentos -->
@@ -98,7 +98,7 @@
         </div>
 
         <div id="instrucoes" class="instrucoes">
-            <h3><em>Como Utilizar a Calculadora de Alimentação Natural para Cães:</em></h3>
+            <br>
             <p id="texto-instrucao" style="display: none;">
                 A nossa calculadora foi desenvolvida para ajudar você a calcular a alimentação ideal para o seu cão, considerando a idade e o porte do animal. 
                 Siga as orientações abaixo para usar a calculadora de forma eficiente:
@@ -119,12 +119,12 @@
                 <br><br>
                 Utilize a calculadora sempre que precisar e garanta que seu melhor amigo tenha uma alimentação saudável e balanceada!
             </p>
-            <button id="ver-mais" onclick="toggleTexto()" class="btn-ver-mais">Ver Mais</button>
+            <button id="ver-mais" onclick="toggleTexto()" class="btn-ver-mais">Instruções de utilização da calculadora de alimentação natural para Cães</button>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 SoDog. Todos os direitos reservados. versão 06/11/2024 às 11:00</p>
+        <p style="color: white;"> &copy; 2024 SoDog. Todos os direitos reservados. versão 06/11/2024 às 11:00</p>
     </footer>
 
     <script src="script.js"></script>
